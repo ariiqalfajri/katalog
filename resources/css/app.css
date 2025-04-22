@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@plugin 'daisyui';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../views';
+@source '../views/*.blade.php';
+@source '../views/**/*.blade.php';
+@source "../../node_modules/flowbite";
+
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.navbar-fixed {
+    @apply fixed z-[9999] backdrop-blur-md opacity-80 transition duration-300;
+}
+
+body {
+    padding-top: 60px; /* Sesuaikan dengan tinggi navbar */
+}
