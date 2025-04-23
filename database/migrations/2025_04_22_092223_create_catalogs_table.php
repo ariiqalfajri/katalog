@@ -13,10 +13,8 @@ return new class extends Migration
     {
         Schema::create('catalogs', function (Blueprint $table) {
             $table->id('id_katalog');
-            $table->string('nama_katalog', 150);
-            $table->string('jenis_katalog');
-            $table->string('luas_katalog');
-            $table->string('harga_katalog');
+            $table->string('nama_katalog');
+            $table->string('deskripsi_katalog');
             $table->timestamps();
         });
     }
