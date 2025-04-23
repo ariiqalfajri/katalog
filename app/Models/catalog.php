@@ -10,7 +10,7 @@ class catalog extends Model
 
     protected $primaryKey = 'id_katalog';
 
-    protected $fillable = ['nama_katalog', 'jenis', 'luas'];
+    protected $fillable = ['nama_katalog', 'jenis', 'luas', 'harga'];
 
     protected $guarded = ['id_katalog'];
 }
