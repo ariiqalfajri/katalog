@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/profile', function () {
+    return view('pages.profile');
+});
+
 Route::get('/contact', function(){
     return view('pages.contact');
 });
