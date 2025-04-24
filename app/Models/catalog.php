@@ -4,13 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class catalog extends Model
+class Catalog extends Model
 {
-    protected $table = 'tb_katalog';
+    protected $table = 'catalogs';
 
     protected $primaryKey = 'id_katalog';
 
-    protected $fillable = ['nama_katalog', 'jenis', 'luas', 'harga'];
+    protected $fillable = ['nama_katalog', 'deskripsi_katalog'];
 
     protected $guarded = ['id_katalog'];
 }

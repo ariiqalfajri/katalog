@@ -23,11 +23,13 @@ Route::get('/contact/{id}', function($id){
 });
 
 Route::get('/catalog', function(){
-    return view('pages.catalog');
+    return view('pages.catalog.show');
 });
 
-Route::get('/catalog', [CatalogController::class, 'getCatalog']);
-Route::get('/catalog/add', [CatalogController::class, 'addCatalog']);
+Route::get('/catalog', [CatalogController::class, 'index']);
+
+Route::get('/catalog/create', [CatalogController::class, 'createCatalog']);
+Route::post('catalog', [CatalogController::class, 'storeCatalog']);
 
 Route::get('/services', function(){
     return view('pages.services');
