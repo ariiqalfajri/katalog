@@ -158,11 +158,14 @@ class CatalogController extends Controller
             'deskripsi_katalog' => $request->input('deskripsi_katalog'),
         ];
 
-        if ($request->hasFile('gambar_katalog')) {
-            $image = $request->file('gambar_katalog');
-            $imageName = time() . '_' . $image->getClientOriginalName();
-            $path = $image->storeAs('catalog_images', $imageName, 'public');
-            $updateData['gambar_katalog'] = '/storage/' . $path;
+        if ($request->hasFile('catalog_image')) {
+            $file = $request->file('catalog_image');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $filepath = 'uploads/' . $filename;
+            $file->move(public_path('uploads'), $filename);
+    
+            // Update juga field gambar_katalog
+            $updateData['gambar_katalog'] = $filepath;
         }
 
         $this->database
