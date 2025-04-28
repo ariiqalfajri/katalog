@@ -22,6 +22,7 @@ Home Page
     </div>
 
     <!--value-->
-    
+    <!--faq-->
+    <!--timeline project-->
     <!--testimoni-->
 @endsection
