@@ -24,8 +24,10 @@ class CatalogController extends Controller
     }
 
     // setup /catalog
-    public function index()
+    public function index(Request $request)
     {
+        $search = $request->input('keyword'); // Ambil keyword dari input
+
         $katalog = $this->database
             ->getReference($this->table)
             ->getValue();
@@ -37,9 +39,16 @@ class CatalogController extends Controller
 
         $data_katalog = [];
         $id_counter = 1;
+
         if (is_array($katalog)) {
             foreach ($katalog as $key => $value) {
                 if (is_array($value)) {
+                    $nama = $value['nama_katalog']??'';
+
+                    if ($search && stripos ($nama, $search) === false) {
+                        continue;
+                    }
+
                     $data_katalog[] = (object) [
                         'id_row' => $id_counter++,
                         'id_katalog' => $key++,
@@ -174,7 +183,6 @@ class CatalogController extends Controller
 
         return redirect('/catalog')->with('pesan', 'Catalog has been updated');
     }
-
 
     public function destroy($id)
     {
