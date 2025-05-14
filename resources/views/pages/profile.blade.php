@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Profile page
+    Profile Page
 @endsection
 
 @section('konten')
@@ -86,5 +86,4 @@
         </div>
     </section>
 
-    <!--CTA kontakan-->
-@endsection
+    @endsection

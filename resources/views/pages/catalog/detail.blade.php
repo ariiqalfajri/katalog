@@ -3,7 +3,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Detail page
+    Detail Page
 @endsection
 
 @section('konten')
