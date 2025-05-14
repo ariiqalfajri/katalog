@@ -24,9 +24,41 @@
             </div>
         </div>
     </section>
-
-    <!--value-->
+    
     <!--dropdown faq-->
+    <section id="faq" class="pt-16 pb-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="lg w-1/2 px-4">
+                    <div class="max-w-xl mx-auto text-center mb-4">
+                        <h4 class="font-bold text-4xl text-primary">FAQ</h4>
+                        <p class="font-medium text-xl text-secondary">At first, they were also confused.</p>
+                    </div>
+                </div>
+                <!--faq start-->
+                <div class="lg w-1/2 px-4">
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> <!--radio atau checkbox-->
+                        <div class="collapse-title font-semibold">How do I create an account?</div>
+                        <div class="collapse-content text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, ut molestias! Reiciendis, sapiente dolorum qui similique illo repudiandae quaerat odit quae. Fuga hic labore facilis minima, voluptatem sequi quos corporis dolore accusamus doloribus, quam quo deleniti provident nemo. Ratione dolor modi nulla eos veritatis laborum est cumque temporibus aut doloremque?</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+                        <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
+                            instructions sent to your email.</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                        <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
+                            changes.</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--timeline project-->
     <section id="timeline" class="pt-16 pb-16">
@@ -156,7 +188,8 @@
                         <p>hello dear</p>
                     </div>
                     <div class="diff-item-2" role="img">
-                        <img alt="daisy" src="https://img.daisyui.com/images/stock/photo-1560717789-0ac7c58ac90a.webp" />
+                        <img alt="daisy"
+                            src="https://img.daisyui.com/images/stock/photo-1560717789-0ac7c58ac90a.webp" />
                         <p>hello love</p>
                     </div>
                     <div class="diff-resizer flex items-center justify-center">
@@ -173,6 +206,52 @@
             </div>
         </div>
     </section>
+
+    <!--clients-->
+        <section id="clients" class="pt-4 pb-8">
+        <div class="container mx-auto">
+            <div class="w-full">
+                <div class="max-w-xl mx-auto text-center mb-8"> <!--Client Header-->
+                    <h4 class="font-bold text-4xl text-primary">Clients</h4>
+                </div>
+                <div id="people1" class="flex flex-wrap items-center justify-between">
+                    <div class="flex-1 px-4 md:w-1/2 lg:w-1/4 xl:w-1/3 mt-8"> <!--image-->
+                        <div class="card w-full">
+                            <figure>
+                                <img class="max-w-[400px] h-auto w-48 rounded-lg shadow-md" src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                    alt="Shoes" />
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="flex-1 px-4 md:w-1/2 lg:w-1/4 xl:w-1/3 mt-8"> <!--image-->
+                        <div class="card w-full">
+                            <figure>
+                                <img class="max-w-[400px] h-auto w-48 rounded-lg shadow-md" src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                    alt="Shoes" />
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="flex-1 px-4 md:w-1/2 lg:w-1/4 xl:w-1/3 mt-8"> <!--image-->
+                        <div class="card w-full">
+                            <figure>
+                                <img class="max-w-[400px] h-auto w-48 rounded-lg shadow-md" src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                    alt="Shoes" />
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="flex-1 px-4 md:w-1/2 lg:w-1/4 xl:w-1/3 mt-8"> <!--image-->
+                        <div class="card w-full">
+                            <figure>
+                                <img class="max-w-[400px] h-auto w-48 rounded-lg shadow-md" src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                    alt="Shoes" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!--testimoni-->
     <section id="testimoni" class="pt-4 pb-8" style="background-color: azure">
