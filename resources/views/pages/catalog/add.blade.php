@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    addCatalogpage
+    Add New Catalog Page
 @endsection
 
 @section('konten')

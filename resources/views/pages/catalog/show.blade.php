@@ -3,7 +3,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Catalog page
+    Catalog Page
 @endsection
 
 @section('konten')
